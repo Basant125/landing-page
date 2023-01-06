@@ -1,0 +1,7 @@
+.nav_text {
+    cursor: pointer;
+}
+
+.nav_text:hover {
+    color: #000;
+}

@@ -3,3 +3,12 @@
     max-width: 60px;
     height: auto;
 }
+
+.services_box {
+    transition: all 0.3s;
+}
+
+.services_box:hover {
+    /* outline: 1px solid #444; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

@@ -29,7 +29,7 @@ const Dedicated = () => {
                     Wrap
                     component="div"
                     sx={{
-                        fontSize: { xs: '22px', sm: "28px" },
+                        fontSize: { xs: '18px', sm: "24px" },
                         margin: "10px 0px",
                         color: "#808e9b",
                         fontWeight: "500",
@@ -51,14 +51,21 @@ const Dedicated = () => {
                 dedicate?.map((item, index) => (
                     <Grid key={index} item xs={12} sm={12} md={3} lg={3}  >
                         <Box sx={{
-                            minHeight: '200px',
+                            // minHeight: '200px',
                             maxWidth: "100%",
                             textAlign: { xs: "center", md: "left" },
-                            marginBottom: "1.5rem"
-                            // display: 'flex',
-                            // flexDirection: 'column',
-                            // alignItems: { xs: "flex-start", sm: "flex-end" }
-                        }}>
+                            marginBottom: "1.5rem",
+                            display: 'flex',
+                            flexDirection: 'column',
+                            rowGap: "10px",
+                            alignItems: { xs: "center", md: "flex-start" },
+                            justifyContent: "space-between",
+                            position: "relative",
+                            padding: "14px",
+                            borderRadius: "6px",
+                        }}
+                            className="services_box"
+                        >
                             <img src={item.img} alt="dedicated_img" className="dedicated_img" />
                             <Typography
                                 variant="h4"
@@ -81,22 +88,26 @@ const Dedicated = () => {
                                 component="div"
                                 sx={{
                                     fontSize: { xs: '20px', sm: "22px" },
-                                    margin: "10px 0px",
+                                    margin: "5px 0px",
                                     color: "#808e9b",
                                     fontWeight: "500",
-
+                                    minHeight: { xs: '', md: '180px' },
                                 }}
                             >
                                 {item.description}
                             </Typography>
-                            <Button variant="text" sx={{ color: "#FFA500", fontSize: { xs: '18px', sm: '24px' }, textTransform: "capitalize" }}>Get Started</Button>
+                            <Button variant="text" sx={{
+                                color: "#FFA500",
+                                fontSize: { xs: '18px', sm: '24px' },
+                                textTransform: "capitalize",
+                            }}>Get Started</Button>
                         </Box>
                     </Grid>
                 ))
             }
 
         </Grid>
-    </Box>;
+    </Box >;
 };
 
 export default Dedicated;

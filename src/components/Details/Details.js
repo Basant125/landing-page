@@ -100,6 +100,7 @@ const Details = () => {
                                 padding: "1.5rem 0rem",
                                 color: "#777",
                                 fontWeight: "600",
+                                height: "14rem"
 
                             }}
                         >

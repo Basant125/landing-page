@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import './Nav.css'
 import { assets } from '../../constant'
 import MenuIcon from '@mui/icons-material/Menu';
 import { AppBar, Badge, Box, Button, Container, IconButton, Toolbar, Typography, } from "@mui/material";
+import SideBar from "../SideBar/SideBar";
 const Nav = () => {
+    const [show, setShow] = useState(false)
+
+    const handleMenu = () => {
+        setShow(true)
+    }
     return <Box sx={{ flexGrow: 1, padding: "20px 0px", alignItems: 'center' }} >
         <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: "none", }}>
             <Toolbar>
@@ -30,6 +36,7 @@ const Nav = () => {
                         component="div"
                         sx={{ color: "#444", fontWeight: 500 }}
                         className="nav_text"
+                        id="service"
                     >
                         Services
                     </Typography>
@@ -60,13 +67,15 @@ const Nav = () => {
                     edge="start"
                     color="inherit"
                     aria-label="open drawer"
-                    sx={{ display: { xs: 'flex', md: 'none' }, color: "#525DED", fontSize: '50px', alignItems: 'center' }}
+                    sx={{ display: { xs: 'flex', md: 'none' }, color: "#525DED", alignItems: 'center' }}
+                    onClick={handleMenu}
                 >
-                    <MenuIcon />
+                    <MenuIcon style={{ fontSize: "36px" }} />
                 </IconButton>
 
             </Toolbar>
         </AppBar>
+        <SideBar setShow={setShow} show={show} />
     </Box>;
 };
 

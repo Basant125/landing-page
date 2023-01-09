@@ -40,6 +40,8 @@ import Youtube from '../Assets/youtube.png'
 import Insta from '../Assets/insta.png'
 import facebook from '../Assets/facebook.png'
 import Linkdin from '../Assets/linkdin.png'
+import vector from '../Assets/Vector-4.png'
+import group34 from '../Assets/Group 34.png'
 
 
 export const allEllipse = [Ellipse1,
@@ -81,5 +83,7 @@ export default {
     Insta,
     facebook,
     Linkdin,
-    allEllipse
+    allEllipse,
+    vector,
+    group34
 }

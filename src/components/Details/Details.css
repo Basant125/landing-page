@@ -1,7 +1,6 @@
 .learn_btn {
     text-transform: capitalize !important;
     color: #525DED !important;
-    font-size: 22px !important;
     font-weight: 500;
     display: flex;
     column-gap: 10px;

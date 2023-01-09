@@ -1,0 +1,17 @@
+.sidebar_content {
+    text-align: center;
+    position: relative;
+}
+
+.sidebar_link {
+    padding: 1rem 1.4rem !important;
+    color: #525DED !important;
+    width: 100%;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    text-align: left !important;
+}
+
+.side_btn {
+    width: 80%;
+}

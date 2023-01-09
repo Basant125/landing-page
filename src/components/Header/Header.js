@@ -15,7 +15,7 @@ const Header = () => {
             </Grid>
         </Grid>
         <Grid container sx={{ padding: "3rem 1rem", }} >
-            <Grid item xs={12} sm={12} md={6} lg={6} className="home_content">
+            <Grid item xs={12} sm={12} md={6} lg={6} className="home_content" textAlign={{ xs: "center", sm: "left" }}>
                 <span>Claim a Free Quote</span>
                 <Typography
                     variant="h1"
@@ -29,7 +29,7 @@ const Header = () => {
 
                     }}
                 >
-                    <span style={{ borderBottom: "10px solid #FFA500", }}>Get started </span>on fulfilling
+                    <span style={{ borderBottom: "10px solid #FFA500", display: "inline-block", marginBottom: "3px" }}>Get started </span> on fulfilling
                     your Dubai or UAE
                     dream.</Typography>
                 <Box sx={{ display: { xs: 'block', md: 'none' } }}>
@@ -40,9 +40,9 @@ const Header = () => {
                     Offshore Company Registration & help you
                     setup your company with a bank account and
                     visas.</p>
-                <Box className="btn_group">
-                    <Button variant="contained" className="btn_color" sx={{ fontSize: { xs: "10px", sm: "16px" } }}>Start a Company</Button>
-                    <Button variant="outlined" className="btn" sx={{ fontSize: { xs: "10px", sm: "16px" } }}>Renew a Company</Button>
+                <Box className="btn_group" sx={{ display: "flex", justifyContent: { xs: "center", sm: "flex-start" } }}>
+                    <Button variant="contained" className="btn_color" sx={{ fontSize: { xs: "14px", sm: "16px" } }}>Start a Company</Button>
+                    <Button variant="outlined" className="btn" sx={{ fontSize: { xs: "14px", sm: "16px" } }}>Renew a Company</Button>
                 </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={6} lg={6} sx={{ display: { xs: 'none', md: 'block' } }}>
@@ -64,7 +64,7 @@ const Header = () => {
                     Wrap
                     component="div"
                     sx={{
-                        fontSize: { xs: '14px', sm: "24px" },
+                        fontSize: { xs: '18px', sm: "24px" },
                         margin: "10px 0px",
                         color: "#525DED",
                         fontWeight: "500",

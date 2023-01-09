@@ -7,15 +7,15 @@ const Details = () => {
     return <Box sx={{ flexGrow: 1, margin: "1rem" }}>
         <Grid container spacing={{ xs: 1, md: 8 }} >
             <Grid item lg={1} sx={{ display: { md: 'none', lg: "block" } }}></Grid>
-            <Grid item xs={12} sm={12} md={6} lg={4}>
+            <Grid item xs={12} sm={12} md={6} lg={4} >
                 <Box sx={{ marginBottom: { xs: '0rem', md: "12rem" } }}>
-                    <Box sx={{ padding: { xs: "0rem 0rem .5rem 0rem", sm: "0rem 0rem 4rem 0rem" }, }}>
+                    <Box sx={{ padding: { xs: "0rem 0rem .5rem 0rem", sm: "0rem 0rem 4rem 0rem" }, textAlign: { xs: "center", sm: "left" } }}>
                         <Typography
                             variant="p"
                             Wrap
                             component="div"
                             sx={{
-                                fontSize: { xs: '16px', sm: "24px" },
+                                fontSize: { xs: '22px', sm: "28px" },
                                 // padding: { xs: "0rem 0rem 3rem 0rem", sm: "0rem 0rem 1rem 0rem" },
                                 color: "#444",
                                 fontWeight: "700",
@@ -27,7 +27,7 @@ const Details = () => {
                             started on fulfilling your UAE dream.
 
                         </Typography>
-                        <Button variant="text" sx={{ color: "#525DED", fontSize: { xs: '18px', sm: "24px" }, textTransform: "capitalize" }}>Claim a Free Quote</Button>
+                        <Button variant="text" sx={{ color: "#525DED", fontSize: { xs: '20px', sm: "24px" }, textTransform: "capitalize" }}>Claim a Free Quote</Button>
                     </Box>
                     <Box sx={{ margin: '2rem 0rem', padding: "2rem", border: "1px solid #ccc", borderRadius: "8px" }}>
                         <Box sx={{ display: 'flex', justifyContent: "center", alignItems: "center", padding: "3rem 0rem 4rem 0rem", }}>
@@ -68,7 +68,7 @@ const Details = () => {
                             requirements overnight in the past.
                             But we are here to help you.
                         </Typography>
-                        <Button className="learn_btn" >Learn More <ArrowForwardIcon /></Button>
+                        <Button className="learn_btn" sx={{ fontSize: "22px" }}>Learn More <ArrowForwardIcon /></Button>
                     </Box>
                 </Box>
                 <Box sx={{ display: { xs: 'none', md: "block" } }}>
@@ -113,7 +113,7 @@ const Details = () => {
                             matters most to you.
                         </Typography>
 
-                        <Button className="learn_btn" >Learn More <ArrowForwardIcon /></Button>
+                        <Button className="learn_btn" sx={{ fontSize: "22px" }} >Learn More <ArrowForwardIcon /></Button>
                     </Box>
                 </Box>
             </Grid>
@@ -159,7 +159,7 @@ const Details = () => {
                             business are encouraged. Get our
                             insightfull guidance today.
                         </Typography>
-                        <Button className="learn_btn" >Learn More <ArrowForwardIcon /></Button>
+                        <Button className="learn_btn" sx={{ fontSize: "22px" }}>Learn More <ArrowForwardIcon /></Button>
                     </Box>
                 </Box>
                 <Box>
@@ -203,14 +203,14 @@ const Details = () => {
                             agent is dedicated to get this done
                             for you for a seamless process.
                         </Typography>
-                        <Button className="learn_btn" >Learn More <ArrowForwardIcon /></Button>
+                        <Button className="learn_btn" sx={{ fontSize: "22px" }}>Learn More <ArrowForwardIcon /></Button>
                     </Box>
                     <Typography
                         variant="p"
                         Wrap
                         component="div"
                         sx={{
-                            fontSize: { xs: '16px', sm: "24px" },
+                            fontSize: { xs: '22px', sm: "28px" },
                             margin: "10px 0px",
                             color: "#1e272e",
                             fontWeight: "600",
@@ -223,7 +223,7 @@ const Details = () => {
                         free setup in UAE.
 
                     </Typography>
-                    <Button className="learn_btn" >More about our services<ArrowForwardIcon /></Button>
+                    <Button className="learn_btn" sx={{ fontSize: { xs: "18px", sm: "22px" } }} >More about our services<ArrowForwardIcon /></Button>
                 </Box>
             </Grid>
             <Grid item sx={{ display: { md: 'none', lg: "block" } }} lg={1}></Grid>
